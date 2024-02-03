@@ -3,3 +3,4 @@ type: shell
 commands:
   - echo 'deb [signed-by=/usr/share/keyrings/tuxedo-archive-keyring.gpg] https://deb.tuxedocomputers.com/ubuntu jammy main' | tee /etc/apt/sources.list.d/tuxedo-computers.list
   - apt update
+  - apt install tuxedo-control-center
