@@ -1,0 +1,7 @@
+name: install-debs
+type: shell
+commands:
+  - echo 'deb [signed-by=/usr/share/keyrings/tuxedo-archive-keyring.gpg] https://deb.tuxedocomputers.com/ubuntu jammy main' | sudo tee /etc/apt/sources.list.d/tuxedo-computers.list
+  - apt update --allow-insecure-repositories
+  - apt install --allow-unauthenticated tuxedo-archive-keyring
+  - apt install tuxedo-control-center
