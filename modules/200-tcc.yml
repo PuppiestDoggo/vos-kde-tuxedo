@@ -1,8 +1,4 @@
 name: tcc
 type: shell
 commands:
-  - gpg --recv-key 120ED28D54840598
-  - echo 'deb [signed-by=/usr/share/keyrings/tuxedo-archive-keyring.gpg] https://deb.tuxedocomputers.com/ubuntu jammy main' | tee /etc/apt/sources.list.d/tuxedo-computers.list
-  - apt update --allow-insecure-repositories
-  - apt install --allow-unauthenticated tuxedo-archive-keyring -y
-  - apt install tuxedo-control-center --allow-unauthenticated -y
+  - apt install -y plasma-desktop
