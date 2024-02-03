@@ -2,7 +2,8 @@ name: tcc
 type: shell
 commands:
   - echo 'deb [signed-by=/usr/share/keyrings/tuxedo-archive-keyring.gpg] https://deb.tuxedocomputers.com/ubuntu jammy main' | tee /etc/apt/sources.list.d/tuxedo-computers.list
-  - apt update --allow-insecure-repositories
-  - apt install --allow-unauthenticated tuxedo-archive-keyring
-  - apt update
-  - apt install tuxedo-control-center
+  - apt update --allow-insecure-repositories -y 
+  - apt install --allow-unauthenticated tuxedo-archive-keyring -y
+  - apt update -y
+  - apt install tuxedo-control-center -y
+
