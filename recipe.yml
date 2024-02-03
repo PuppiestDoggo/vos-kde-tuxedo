@@ -31,7 +31,6 @@ modules:
   includes:
     - modules/50-install-debs
     - modules/80-set-image-abroot-config
-    - modules/200-tcc
 
 # Put your custom actions before this comment
 
